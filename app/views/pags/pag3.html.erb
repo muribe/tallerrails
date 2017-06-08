@@ -1,0 +1,13 @@
+<%= @users %>
+
+<script>
+    $( document ).ready(function(){
+        count= 0
+        $( document ).click(function() {
+            count ++;
+            if (count>1) {
+                $.backstretch("<%= asset_path 'r2.svg'%>");
+            }
+            });
+    })
+</script>

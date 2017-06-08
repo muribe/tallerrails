@@ -1,2 +1,12 @@
-<h1>Pags#pag2</h1>
-<p>Find me in app/views/pags/pag2.html.erb</p>
+<%= @users %>
+
+<%= image_tag 'r1.png' %>
+<%= image_tag 'r2.svg' %>
+<button id="b1" class="btn btn-primary btn-lg">Imagen</button>
+<script>
+    $( document ).ready(function(){
+        $("#b1").click(function(){
+            $.backstretch("<%= asset_path 'r2.svg'%>");
+        })
+    })
+</script>
